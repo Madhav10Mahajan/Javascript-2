@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <script>
+        let mydiv=document.createElement('div')
+        console.log(mydiv);
+        mydiv.className='parent'
+        mydiv.id=Math.round(Math.random()*10+1);
+        console.log(mydiv.className)
+        console.log(mydiv.id)
+        mydiv.innerText='hello world'
+        document.body.appendChild(mydiv);
+        // document.body.appendChild(mydiv);
+        // mydiv.style.backgroundColor='white'
+    </script>
+    <!-- <div class="parent">
+        <p id="fpara">Monday</p>
+        <p id="spara">Tuesday</p>
+        <p id="tpara">Wednesday</p>
+        <p id="fopara">Thursday</p>
+    </div> -->
+</body>
+</html>

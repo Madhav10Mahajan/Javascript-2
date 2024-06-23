@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black">
+    <ul id="flist" style="color: white"></ul>
+    <script>
+      let num = 0;
+      function addlanguage(lang) {
+        let newchild = document.createElement("li");
+        newchild.textContent = lang;
+        console.log("new child has been created");
+        let parent = document.getElementById("flist");
+        parent.appendChild(newchild);
+        console.log("new child has been appended");
+        newchild.classList.add('language'+(num + 1));
+        console.log(newchild.classList)
+        num++;
+      }
+      // create new element
+      addlanguage("javascript");
+      addlanguage("python");
+      addlanguage("haskell");
+      addlanguage("golang")
+
+      // edit
+      let secondlanguage=document.querySelector('.language2');
+      console.log(secondlanguage.textContent);
+      secondlanguage.textContent='mojo'
+
+      let firstlanguage=document.querySelector('.language1');
+      let child=document.createElement('li');
+      console.log(child);
+      child.textContent='typescript'
+      firstlanguage.replaceWith(child);
+
+      // remove
+      let fourthlanguage=document.querySelector('.language4')
+      console.log(fourthlanguage.textContent);
+      let parent=fourthlanguage.parentElement;
+      console.log(parent);
+      fourthlanguage.remove();
+    //   parent.removeChild(fourthlanguage)
+      
+    
+    </script>
+  </body>
+</html>
