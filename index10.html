@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>chai aur code</h1>
+    <button id="button">submit</button>
+    <script>
+      //   setTimeout(function () {
+      //     console.log("hello madhav");
+      //   }, 5000);
+      function changetext() { 
+        console.log("hello madhav");
+        let h1 = document.querySelector("h1");
+        h1.textContent = "best js series";
+      }
+    //   let changeme = setTimeout(changetext, 4000);
+    let changeme=setInterval(changetext,2000);
+    //   clearTimeout(changeme);
+      let button=document.querySelector('#button');
+      button.addEventListener('click',function(){
+        // clearTimeout(changeme);
+        clearInterval(changeme);
+        console.log('stopped');
+      })
+      // setInterval(function(){
+      //     // console.log('aur bette')
+      // },2000)
+    </script>
+  </body>
+</html>
