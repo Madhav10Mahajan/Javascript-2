@@ -15,7 +15,7 @@ start.addEventListener("click", function () {
   if (changecolor==null) {
     changecolor = setInterval(function () {
       document.body.style.backgroundColor = randomcolor();
-    }, 2000);
+    }, 100);
   }
 });
 stop.addEventListener("click", function () {
