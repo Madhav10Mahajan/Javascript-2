@@ -11,7 +11,7 @@ print();
 // function scope
 
 console.log(marks);
-console.log("hello") // temoparal dead zone you cant access the variable marks before line no 16 because hoisting 
+console.log("hello") // temporal dead zone you cant access the variable marks before line no 16 because hoisting 
 // doesnt work in case of let and const  
 console.log("madhav")
 let marks=100;
